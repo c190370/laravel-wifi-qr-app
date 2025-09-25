@@ -1,23 +1,17 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', function () {
-    $user = [
-        [
-            'name' => 'Bittu',
-            'email' => 'b2tamrakar@gmail.com',
-            'age' => 25,
-            'city' => 'New York'
-        ],
+// Root route - redirect to WiFi QR generator
+Route::get('/', function () {
+    return view('index');
+});
 
-        [
-            'name' => 'Ravi',
-            'email' => 'ravi@example.com',
-            'age' => 30,
-            'city' => 'Los Angeles',
-        ]
-    ];
-    return view('index', ['land' => $user]);
+Route::get('/home', function () {
+    return view('index');
+});
+
+Route::get('/qr-generator', function () {
+    return view('index');
 });
 
 

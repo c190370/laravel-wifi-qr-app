@@ -63,7 +63,9 @@
                 <!-- Header -->
                 <div class="text-center mb-5">
                     <h1 class="display-4 text-primary mb-3">
-                        <i class="bi bi-wifi me-3"></i>WiFi QR Code Generator
+                        <i class="bi bi-wifi me-3"></i>WiFi QR Code Generator </br>
+                       <p style="font-size: 23px;"> Created and deployed by Full stack engineer</p>
+                        Mr. Bittu Tamrakar
                     </h1>
                     <p class="lead text-muted">Generate QR codes for easy WiFi sharing</p>
                 </div>
