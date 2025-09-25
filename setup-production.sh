@@ -9,6 +9,10 @@ mkdir -p /app/database
 # Create SQLite database file
 touch /app/database/database.sqlite
 
+# Clear any existing cache first
+php artisan config:clear || echo "No config to clear"
+php artisan cache:clear || echo "No cache to clear"
+
 # Generate application key if not set
 if [ -z "$APP_KEY" ]; then
     php artisan key:generate --force
